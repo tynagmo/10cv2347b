@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/10cv234b/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,9 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+//    Dans le cas où mod_rewrite est activé
+$config['index_page'] = "";
+
 
 /*
 |--------------------------------------------------------------------------
@@ -356,6 +358,14 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Libraries
+| -------------------------------------------------------------------
+*/
+$autoload['libraries'] = array('database', 'session');
 
 
 /* End of file config.php */
