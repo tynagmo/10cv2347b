@@ -8,5 +8,3 @@
 	<p>
 		<img src="400cat.png" alt="404" />
 	</p>
-</body>
-</html>

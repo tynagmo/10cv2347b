@@ -24,7 +24,15 @@ class Acceuil extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data = array();
+		$data['pseudo'] = 'Arthur';
+		$data['email'] = 'email@ndd.fr';
+		$data['en_ligne'] = true;
+		
+		
+		$this->load->view('include/header.html');
+		$this->load->view('index.html',$data);
+		$this->load->view('include/footer.html');
 	}
 	
 }
