@@ -27,7 +27,7 @@ $config['base_url']	= 'http://localhost/10cv234b/';
 |
 */
 //    Dans le cas où mod_rewrite est activé
-$config['index_page'] = "";
+$config['index_page'] = '';
 
 
 /*

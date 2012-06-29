@@ -1,7 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Acceuil extends CI_Controller {
 
+	public function __construct()
+	{
+		//	Obligatoire
+		parent::__construct();
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -21,6 +26,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	
 }
 
 /* End of file welcome.php */
