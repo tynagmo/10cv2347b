@@ -1,7 +1,7 @@
 body
 {
 width: 1000px;
-background: #D8D2F3 url("pattes.png") top left no-repeat fixed;
+background: #D8D2F3 top left no-repeat fixed;
 margin: 0 auto;
 padding-top: 0%;
 
@@ -12,17 +12,18 @@ header
 width: 100%;
 height: 200px;
 padding-bottom: 10px;
+background : url("pattes.png") top left no-repeat;
 }
 .connexion
 {
-position: absolute;
+position: relative;
 display: inline-block;
 height:40px;
 width: 300px;
-border: 3px double green;
-margin-top: 3px;
+border: 1px double green;
+margin-top: 0px;
 margin-bottom:150px;
-margin-left: 497px;
+margin-left: 680px;
 margin-right: 3px;
 }
 
@@ -32,7 +33,7 @@ margin-right: 3px;
 margin-top:10px;
 width: 100%;
 min-height: 800px;
-border: 5px solid;
+border: 1px solid;
 
 }
 
@@ -45,17 +46,19 @@ display: inline-block;
 vertical-align: middle;
 margin-left:5px;
 margin-top: 5px;
-border: 3px solid red;
+border: 1px solid red;
 }
-.menulien
+
+#menulien
 {
-border: 3px solid green;
+border: 1px solid green;
 width:100%;
 height:50px;
 }
+
 .contenu
 {
-border: 3px solid blue;
+border: 1px solid blue;
 width:100%;
 min-height:800px;
 }
@@ -67,7 +70,7 @@ min-height: 850px;
 display: inline-block;
 vertical-align: middle;
 width: 270px;
-border: 3px solid yellow;
+border: 1px solid yellow;
 margin-right:0px;
 margin-top: 5px;
 } 
@@ -75,21 +78,21 @@ margin-top: 5px;
 {
 width:100%;
 height:50px;
-border: 2px solid blue;
+border: 1px solid blue;
 }
 
 .menudroit
 {
 width:100%;
 height:800px;
-border: 2px solid pink;
+border: 1px solid pink;
 }
 /*-------------------------------------*/
 footer
 {
 width: 100%;
 height: 200px;
-border: 3px groove white;
+border: 1px groove white;
 }
 
 /*Menu*/
