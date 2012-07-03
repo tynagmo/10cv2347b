@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>LOLCats</title>
-		<link rel="stylesheet" href="default.css"/>
+		<link rel="stylesheet" href="<?php echo css_url('default'); ?>"/>
 		<!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -14,7 +14,17 @@
     <header> 
 	
 		<div class="connexion">
-			connexion
+			<form method="post" action="">
+				<label for="pseudo">Pseudo : </label>
+				<input type="text" name="pseudo" value="<?php echo set_value('pseudo'); ?>" />
+				<?php echo form_error('pseudo'); ?>
+
+				<label for="mdp">Mot de passe :</label>
+				<input type="password" name="mdp" value="" />
+				<?php echo form_error('mdp'); ?>
+
+				<input type="submit" value="Envoyer" />
+			</form>
 		</div> 
 			
 		

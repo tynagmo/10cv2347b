@@ -1,10 +1,10 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Forum extends CI_Controller
 {
-	public function acceuil()
+	public function accueil()
 	{
-		echo 'Hello World!';
+		echo sha1(uniqid());
 	}
 	//	Cette page accepte une variable $_GET facultative
 	public function bonjour($pseudo = '')
